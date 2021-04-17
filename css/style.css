@@ -1,0 +1,167 @@
+﻿* {
+	box-sizing: border-box;
+	top: auto;
+}
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+   background-color: #e6e6e6;
+   letter-spacing:normal;
+}
+a:link{
+	color:black;
+}
+a:hover {
+  color:#006699;
+  text-decoration:underline;
+}
+.header-5 {
+  box-sizing: border-box;
+  width: 100%;
+  position:absolute;
+  position:fixed;
+  background-color:transparent;
+}
+.header-5.scroll {
+  box-sizing: border-box;
+  width: 100%;
+  position:absolute;
+  position:fixed;
+  background-color:#e6e6e6;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  width:80%;
+  height: 60px;
+  padding: 0 0.8em;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500; 
+}
+
+.header-nav-list {
+  display: inline-block;
+  width: 100%;
+}
+
+.header-nav-item {
+  float: left;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600; 
+  letter-spacing:normal;
+  color: #444;
+  text-align: center;
+  list-style: none;
+}
+.header-ham {
+  display: none;
+}
+.menu2 {
+  width: 20px;
+  height: 3px;
+  margin: 4px 0;
+  margin-right: 0;
+  background-color: #333;
+}
+
+.header-nav-item:hover {
+  background: #eee;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.main-visual {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 300px;
+   background-image:url('../image/top2.png');
+   background-position:top center;
+   background-repeat:no-repeat;
+}
+
+h2 {
+   margin: 0;
+   font-size: 30px;
+   font-weight: normalc;
+   color: #fff;
+}
+.sectionbox{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1500px;
+   
+}
+.sectiontitle{
+	font-size:20px;
+	color:black;
+}
+
+.usecase-box{
+    margin: 0;
+    display:flex;
+    clear: both;
+    padding:10px;
+    vertical-align::top;
+} 
+.usecase-image{
+    max-width: 500x;
+    width: 50%;
+}
+.usecase-title{
+	font-size:17px;
+	padding-left:10px;
+	letter-spacing:normal;
+}
+.usecase-text{
+    color:gray;
+    margin: 0;
+	padding-left:20px;
+    width: 50%;
+    max-width:500px;
+    overflow-wrap:break-word;
+    letter-spacing:normal;
+}
+.txt{
+    color:gray;
+    margin: 0;
+	padding-left:20px;
+    width: 80%;
+    max-width:1500px;
+    overflow-wrap:break-word;
+    letter-spacing:normal;
+}
+
+.last-section{
+	display:flex;
+	width: 80%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.ls-txt{
+	font-size:10px;
+	color:gray;
+	padding-right:50px;
+	letter-spacing:normal;
+}
+
+@media screen and (max-width: 480px) {
+  .header-nav-list {
+    display: none;
+  }
+
+  .header-nav {
+    margin: 0 0 0 auto;
+  }
+
+  .header-ham {
+    display: block;
+  }
+
