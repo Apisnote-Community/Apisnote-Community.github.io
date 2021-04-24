@@ -50,7 +50,7 @@ a:hover {
 
 .header-nav-item {
   float: left;
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
   font-weight: 600; 
   letter-spacing:normal;
@@ -61,6 +61,7 @@ a:hover {
 .header-ham {
   display: none;
 }
+
 .menu2 {
   width: 20px;
   height: 0px;
@@ -72,9 +73,12 @@ a:hover {
 .header-nav-item:hover {
   background: #eee;
 }
-
-.logo img {
+.logo{
   width: 70px;
+}
+.logo_img {
+  height:20px;
+  width:auto;
 }
 
 .main-visual {
@@ -97,18 +101,17 @@ h2 {
   width: 80%;
   margin: 0 auto;
   max-width: 1500px;
-   
 }
 .sectiontitle{
 	font-size:20px;
 	color:black;
 }
-
 .usecase-box{
     margin: 0;
     display:flex;
     clear: both;
-    padding:10px;
+    padding-left:10px;
+    padding-top:10px;
     vertical-align::top;
 } 
 .usecase-image{
@@ -118,11 +121,14 @@ h2 {
 .usecase-title{
 	font-size:17px;
 	padding-left:10px;
+	padding-top:10px;
 	letter-spacing:normal;
+	margin:0;
 }
 .usecase-text{
     color:gray;
     margin: 0;
+    padding-top:0px;
 	padding-left:20px;
     width: 50%;
     max-width:500px;
@@ -138,7 +144,6 @@ h2 {
     overflow-wrap:break-word;
     letter-spacing:normal;
 }
-
 .last-section{
 	display:flex;
 	width: 80%;
