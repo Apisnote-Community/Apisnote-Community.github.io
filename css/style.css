@@ -133,8 +133,8 @@ h2 {
     color:gray;
     margin: 0;
 	padding-left:20px;
-    width: 80%;
-    max-width:1500px;
+    width: 100%;
+    max-width:1800px;
     overflow-wrap:break-word;
     letter-spacing:normal;
 }
