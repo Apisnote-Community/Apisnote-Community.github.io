@@ -1,27 +1,13 @@
-﻿<script>
+﻿var mvh = $('.main-visual').height();
 
-$(function(){
-
-var header = $('header-5')
-
-header_offset = header.offset();
-
-header_height = header.height();
-
-$(window).scroll(function () {
-
-if($(window).scrollTop() > header_offset.top + header_height) {
-
-header.addClass('scroll');
-
-}else {
-
-header.removeClass('scroll');
-
-}
-
+$(window).scroll(function(){
+  var top = $(window).scrollTop();
+  if ( top > 2 ){
+    $('.header-5').removeClass('top');
+    $('.header-5').addClass('scroll');
+    }
+  else{
+    $('.header-5').removeClass('scroll');
+    $('.header-5').addClass('top');
+   }
 });
-
-});
-
-</script>

@@ -5,7 +5,7 @@
 body {
    margin: 0;
    padding: 0;
-   font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+   font-family: "Roboto",Meiryo,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
    background-color: #e6e6e6;
    letter-spacing:normal;
 }
@@ -21,14 +21,14 @@ a:hover {
   width: 100%;
   position:absolute;
   position:fixed;
+  height:50px;
+}
+.header-5.top {
   background-color:transparent;
 }
 .header-5.scroll {
-  box-sizing: border-box;
-  width: 100%;
-  position:absolute;
-  position:fixed;
   background-color:#e6e6e6;
+  box-shadow: 0px 1px 2px gray;
 }
 
 .header-inner {
@@ -51,7 +51,7 @@ a:hover {
 .header-nav-item {
   float: left;
   padding: 12px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600; 
   letter-spacing:normal;
   color: #444;
@@ -63,7 +63,7 @@ a:hover {
 }
 .menu2 {
   width: 20px;
-  height: 3px;
+  height: 0px;
   margin: 4px 0;
   margin-right: 0;
   background-color: #333;
@@ -82,7 +82,7 @@ a:hover {
    justify-content: center;
    align-items: center;
    height: 300px;
-   background-image:url('../image/top.png');
+   background-image:url('../image/top.gif');
    background-position:top center;
    background-repeat:no-repeat;
 }
