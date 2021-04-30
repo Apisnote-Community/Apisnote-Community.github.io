@@ -6,15 +6,25 @@ body {
    margin: 0;
    padding: 0;
    font-family: "Roboto",Meiryo,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
-   background-color: #e6e6e6;
+   background-color: #fff;
    letter-spacing:normal;
 }
-a:link{
+a:link {
 	color:black;
 }
+.link{
+	color:#006699;
+	text-decoration:underline;
+}
+.link:hover{
+	color:#90cfd9;
+}
 a:hover {
-  color:#006699;
+  color:#90cfd9;
   text-decoration:underline;
+}
+a:visited {
+	color:#006699;
 }
 .header-5 {
   box-sizing: border-box;
@@ -27,7 +37,7 @@ a:hover {
   background-color:transparent;
 }
 .header-5.scroll {
-  background-color:#e6e6e6;
+  background-color:#5ab8c7;
   box-shadow: 0px 1px 2px gray;
 }
 
@@ -58,10 +68,12 @@ a:hover {
   text-align: center;
   list-style: none;
 }
+.header-nav-item.scroll {
+  color:white;
+}
 .header-ham {
   display: none;
 }
-
 .menu2 {
   width: 20px;
   height: 0px;
@@ -73,6 +85,10 @@ a:hover {
 .header-nav-item:hover {
   background: #eee;
 }
+.header-nav-item:hover.scroll {
+  background: #90cfd9;
+}
+
 .logo{
   width: 70px;
 }
@@ -112,7 +128,7 @@ h2 {
     clear: both;
     padding-left:10px;
     padding-top:10px;
-    vertical-align::top;
+    vertical-align:top;
 } 
 .usecase-image{
     max-width: 500x;
