@@ -1,0 +1,164 @@
+﻿.header-1 {
+  z-index:1;
+  box-sizing: border-box;
+  width: 100%;
+  position:fixed;
+  height:50px;
+  background-color:#5ab8c7;
+  box-shadow: 0px 1px 2px gray;
+}
+
+.header1-inner {
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  width:90%;
+  height: 50px;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500; 
+  color: white;
+}
+.header1-nav {
+  height: 50px;
+  align-items: center;
+  margin: 0;
+}
+.header1-nav-list {
+  display: inline-block;
+  padding-left: 20px;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+}
+.header1-nav-item {
+  float: left;
+  padding:13px 10px 13px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing:normal;
+  color: white;
+  list-style: none;
+}
+.header1-ham {
+  display: none;
+}
+
+.header1-nav-item:hover {
+  background: #90cfd9;
+}
+
+.logo1{
+  height:25px;
+  width:120px;
+}
+.logo1_img {
+  height:25px;
+  width:auto;
+  align-items: center;
+}
+.header1-login {
+  color: white;
+  margin-left:auto;
+}
+.loginbox {
+  padding:3px 8px 3px;
+  background-color:white;
+}
+.loginbox:hover{
+  background-color:grey;
+}
+.header1-login p{
+  font-size: 16px;
+  font-weight: 500;
+  color:black;
+  letter-spacing:normal;
+  margin:0;
+  padding:0;
+}
+.header1-login a{
+  text-decoration:none;
+}
+.header1-login a:hover{
+  text-decoration:none;
+}
+.spacer{
+  display:flex;
+  height: 50px;
+  background-color:white;
+}
+.main1-visual{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color:white;
+  background-repeat:no-repeat;
+}
+h5{
+  font-size:30px;
+  font-weight: 400;
+  margin:0px;
+}
+h4{
+  z-index: 0;
+  margin:0px;
+  font-size:30px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 400;
+  border-right: 2px solid transparent;
+}
+h4::after{
+  content:"|";
+  animation:typing 0.8s ease-in-out infinite;
+}
+
+.fb-movie {
+  position: relative;
+  max-width:500px;
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+}
+.fb-movie:before {
+  content: "";
+  display: block;
+  padding-top:56%;
+}
+.fb-movie iframe {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+
+}
+
+@keyframes typing{
+  0% {opacity:0;}
+}
+
+@media screen and (max-width: 700px) {
+  .header1-nav-list {
+    display: none;
+  }
+
+  .flex-box{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+@media screen and (max-width: 480px) {
+  .header1-nav {
+    margin: 0 0 0 auto;
+  }
+
+  .header1-ham {
+    display: block;
+  }
+

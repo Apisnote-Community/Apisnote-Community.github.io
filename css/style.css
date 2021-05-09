@@ -6,7 +6,7 @@ body {
    margin: 0;
    padding: 0;
    font-family: "Roboto",Meiryo,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
-   background-color: #fff;
+   background-color: #F5F7F9;;
    letter-spacing:normal;
 }
 a:link {
@@ -45,27 +45,32 @@ a:visited {
   display: flex;
   align-items: center;
   max-width: 1500px;
-  width:80%;
-  height: 60px;
-  padding: 0 0.8em;
+  width:90%;
+  height: 50px;
+  padding: 0;
   margin: 0 auto;
   font-size: 20px;
   font-weight: 500; 
 }
-
+.header-nav {
+  height: 50px;
+  align-items: center;
+  margin: 0;
+}
 .header-nav-list {
   display: inline-block;
+  padding-left: 20px;
   width: 100%;
+  height: 50px;
+  margin: 0;
 }
-
 .header-nav-item {
   float: left;
-  padding: 10px;
+  padding:13px 10px 13px;
   font-size: 16px;
-  font-weight: 600; 
+  font-weight: 600;
   letter-spacing:normal;
   color: #444;
-  text-align: center;
   list-style: none;
 }
 .header-nav-item.scroll {
@@ -90,11 +95,13 @@ a:visited {
 }
 
 .logo{
-  width: 70px;
+  height:25px;
+  width:120px;
 }
 .logo_img {
-  height:20px;
+  height:25px;
   width:auto;
+  align-items: center;
 }
 
 .main-visual {
@@ -123,6 +130,33 @@ h2 {
 	font-size:20px;
 	color:black;
 }
+
+.flex-box{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.f-childbox{
+  text-align: center;
+  flex-basis: 40%;
+  max-width: 400px;
+  min-width: 250px;
+  background-color: #fff;
+  margin:15px;
+  padding:3px 10px 10px;
+}
+.f-textbox{
+  text-align: justify;
+  padding:3px 20px 0px;
+}
+
+.usecase-image {
+  width: 100%;
+  height: auto;
+}
 .usecase-box{
     margin: 0;
     display:flex;
@@ -131,10 +165,6 @@ h2 {
     padding-top:10px;
     vertical-align:top;
 } 
-.usecase-image{
-    max-width: 500x;
-    width: 50%;
-}
 .usecase-title{
 	font-size:17px;
 	padding-left:10px;
@@ -179,12 +209,13 @@ h2 {
     display: none;
   }
 
-
-@media screen and (max-width: 480px) {
-  .header-nav-list {
-    display: none;
+  .flex-box{
+    flex-direction: column;
+    align-items: center;
   }
 
+
+@media screen and (max-width: 480px) {
   .header-nav {
     margin: 0 0 0 auto;
   }
