@@ -10,7 +10,7 @@ body {
    letter-spacing:normal;
 }
 a:link {
-	color:black;
+	color:#006699;
 }
 .link{
 	color:#006699;
@@ -129,6 +129,7 @@ h2 {
 .sectiontitle{
 	font-size:20px;
 	color:black;
+  margin:10px 0px 0px;
 }
 
 .flex-box{
@@ -139,22 +140,34 @@ h2 {
   flex-wrap: wrap;
   flex-grow: 1;
 }
-.f-childbox1{
+
+.f-childbox{
   text-align: center;
-  flex-basis: 40%;
+  flex-basis: 20%;
   max-width: 400px;
-  min-width: 250px;
-  background-color:#70B5C5;
-  margin:15px;
+  min-width: 285px;
+  background-color:white;
+  margin:15px 15px 30px;
   padding:3px 10px 10px;
 }
+
+.f-childbox1{
+  text-align: center;
+  flex-basis: 20%;
+  max-width: 400px;
+  min-width: 285px;
+  background-color:#70B5C5;
+  margin:15px 15px 30px;
+  padding:3px 10px 10px;
+}
+
 .f-childbox2{
   text-align: center;
-  flex-basis: 40%;
+  flex-basis: 20%;
   max-width: 400px;
-  min-width: 250px;
+  min-width: 285px;
   background-color:#90AF35;
-  margin:15px;
+  margin:15px 15px 30px;
   padding:3px 10px 10px;
 }
 .f-title{
@@ -258,6 +271,7 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+}
 
 
 @media screen and (max-width: 480px) {
@@ -268,4 +282,5 @@ h2 {
   .header-ham {
     display: block;
   }
+}
 

@@ -63,5 +63,5 @@ window.setInterval(() => {
     }).then(() => {
         return test('Create New Ideas');
     })}
-    ,25*1000
+    ,27*1000
 );
