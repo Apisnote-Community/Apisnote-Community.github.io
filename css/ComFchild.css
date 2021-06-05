@@ -159,6 +159,26 @@
     .f-childboxC3:hover{
       background-color:#accb52;
     }
+
+    .f-childboxC1:hover ~ .f-childboxCB1{
+      height: 290px;
+      flex-basis: 40%;
+      max-width: 800px;
+      min-width: 560px;
+    }
+    .f-childboxC2:hover ~ .f-childboxCB1{
+      height: 290px;
+      flex-basis: 40%;
+      max-width: 800px;
+      min-width: 560px;
+    }
+    .f-childboxC3:hover ~ .f-childboxCB2{
+      height: 290px;
+      flex-basis: 40%;
+      max-width: 800px;
+      min-width: 560px;
+    }
+
     .f-childboxC1:hover::after{
         background-image:url('../image/feature1IMG.PNG');
         background-size: contain;
@@ -167,7 +187,7 @@
         height: 290px;
         width:84%;
         left:8%;
-        top:665px;
+        top:650px;
         background-position: center;
       }
     .f-childboxC2:hover::after{
@@ -178,7 +198,7 @@
       height: 290px;
       width:84%;
       left:8%;
-      top:665px;
+      top:650px;
       background-position: center;
     }
 
@@ -190,7 +210,7 @@
       height: 290px;
       width:84%;
       left:8%;
-      top:385px;
+      top:950px;
       background-position: center;
     }
 }
