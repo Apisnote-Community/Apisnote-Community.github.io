@@ -243,11 +243,22 @@ h2 {
 .txt{
     color:gray;
     margin: 0;
-	padding-left:20px;
+    padding-left:20px;
     width: 100%;
     max-width:1800px;
     overflow-wrap:break-word;
     letter-spacing:normal;
+}
+.k-txt{
+  color:gray;
+  margin: 0;
+  padding-left:20px;
+  font-size:14px;
+  font-weight: 400;
+  width: 100%;
+  max-width:1800px;
+  overflow-wrap:break-word;
+  letter-spacing:normal;
 }
 .last-section{
 	display:flex;
