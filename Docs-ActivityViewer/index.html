@@ -1,0 +1,109 @@
+﻿<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+   <title> APISNOTE-Activity-viewer Documentation</title>
+   <meta charset="utf-8" name="description"
+      content="Documentation for APISNOTE-Activity-viewer">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <link rel="icon" type="image/png" href="../image/favicon-96x96.png" sizes="96x96">
+   <link rel="stylesheet" href="../css/styleCom.css">
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/DocsAav.css">
+   <header class="header-1">
+      <div class="header1-inner">
+         <div class="logo1">
+            <a href="https://apisnote-community.github.io/Apisnote-Community/"><img src="../image/apisnote-logo.png" alt="logo"
+                  class="logo1_img">
+            </a>
+         </div>
+         <nav class="header1-nav">
+            <ul class="header1-nav-list">
+               <a href="#usecase">
+                  <li class="header1-nav-item">Use Case : APISNOTE-Activity-viewer</li>
+               </a>
+            </ul>
+         </nav>
+      </div>
+   </header>
+</head>
+
+<body>
+   <div class="spacer"></div>
+   <div class="sectionbox">
+      <br>
+      <h2 class="sectiontitle">APISNOTE-Activity-viewer</h2>
+      <p class="txt">チームでの協働に最適な電子付箋Webツール
+         <a class="link" href="https://www.apisnote.com/">APISNOTE</a> で利用可能な付箋(notes)の動きを可視化するツールです。
+      </p>
+      <p class="txt"><a href="https://github.com/Apisnote-Community/Apisnote-Activity-viewer">GitHub</a>で公開中。
+      </p>
+      <br>
+      <p class="txt">付箋の動きを可視化することで各グループにおける進捗状況を一目で把握できます。</p>
+      <p class="txt">例えば下記可視化の例では,このノートブックを使っている班は 10/28 20:00 までにアイデアの再発想を終え,アイデア評価に移ったことがわかります。</p>
+      <br>
+      <img src="../image/example_aav2.png">
+
+      <br>
+      <hr>
+   </div>
+
+   <div class="sectionbox">
+      <h2 class="sectiontitle">Quick Start</h2>
+      <p class="txt">すぐに使いたい方は「<a href="https://qiita.com/ApisnoteDevelopers/items/1ec7fb9886af71f991d1">exe版の使い方</a>」を参照</p>
+      <br>
+      <hr>
+   </div>
+
+   <div class="sectionbox">
+      <h2 class="sectiontitle"><a href="https://github.com/Apisnote-Community/Apisnote-Activity-viewer">公開ファイル</a></h2>
+      <table border="1">
+         <tr>
+            <th>ファイル</th>
+            <th>説明</th>
+         </tr>
+         <tr>
+            <td>aav5.exe</td>
+            <td>exeファイル版APISNOTE-Activity-viewer (aav)。現在はversion5(aav5)。
+               pythonファイル版よりPyinstallerによりexeファイル化。</td>
+         </tr>
+         <tr>
+            <td>aav5.py</td>
+            <td>pythonファイル版APISNOTE-Activity-viewer。ApisnoteActivityDF.py, aav_heatmap.py, aav_processmap.pyを使用。</td>
+         </tr>
+         <tr>
+            <td>aav5cui.py</td>
+            <td>aav5に入力する内容をあらかじめpythonファイルに記載しておくことで動くaav5。</td>
+         </tr>
+         <tr>
+            <td>ApisnoteActivityDF.py</td>
+            <td>①APISNOTEの各シートのcsvよりデータを取得し一つのPandasデータフレームを出力する関数makeActivityArrayと　②図出力時にmakeActivityArrayより得られるDataFrameの列名を見やすくする関数xAxisIndexを格納
+            </td>
+         </tr>
+         <tr>
+            <td>aav_heatmap.py</td>
+            <td>makeActivityArrayから出力されるDataFrameをheatmapとして可視化する関数heatmapを格納
+            </td>
+         </tr>
+         <tr>
+            <td>aav_prcosess.py</td>
+            <td>makeActivityArrayから出力されるDataFrameをprocessmap(最も活動量の多いシートを示す折れ線図）として可視化する関数processmapを格納
+            </td>
+         </tr>
+      </table>
+      <br>
+      <hr>
+   </div>
+   
+   <div class="last-section">
+      <p class="ls-txt"><a href="http://ischool.or.jp/privacy/">プライバシーポリシー</a></p>
+      <p class="ls-txt"><a href="http://www.jsic.or.jp/">i.school/JSIC</a></p>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="../t/t.min.js"></script>
+   <script src="../css/typing.js"></script>
+</body>
+
+</html>

@@ -16,9 +16,6 @@
          </div>
          <nav class="header-nav">
             <ul class="header-nav-list">
-               <a href="#">
-                  <li class="header-nav-item">Documentation</li>
-               </a>
                <a href="#usecase">
                   <li class="header-nav-item">Use Case</li>
                </a>
@@ -66,7 +63,7 @@
                #1 Apisnote-Activity-viewer</a></h3>
             <p class="f-textbox">APISNOTEにおけるアクティビティを可視化するツール</p>
             <div class="f-button-box">
-               <a href="" class="f-buttona"><div class="f-button">Docs</div></a>
+               <a href="Docs-ActivityViewer/index.html" class="f-buttona"><div class="f-button">Docs</div></a>
                <a href="https://qiita.com/ApisnoteDevelopers/items/1ec7fb9886af71f991d1" class="f-buttona"><div class="f-button">Quick Start</div></a>
             </div>
          </div>
@@ -75,6 +72,7 @@
             <img src="image/icon_others.png" alt="Usecase / modules" class="usecase-image">
             <h3 class="f-title"><a class="link" href="https://github.com/Apisnote-Community/Apisnote-Activity-viewer">#
                その他ユースケース・ツール</a></h3>
+            <p class="f-textbox">準備中</p>
          </div>
       
       </div>
@@ -86,16 +84,18 @@
       <h2 class="sectiontitle"><a id="modules">Modules</a></h2>
 
       <div class="mini-section">
-         <h3 class="usecase-title">#1 Apsinote-Activity DataFrame</h3>
-         <p class="txt">APISNOTE-Activity-viewerに用いられている，APISNOTEの各シートのcsvよりデータを取得し，一つのPandasデータフレームを出力するpythonコード。</p>
+         <h3 class="usecase-title">#1 makeActivityArray()</h3>
+         <p class="txt"><a href="https://github.com/Apisnote-Community/Apisnote-Activity-viewer">APISNOTE-Activity-viewer(aav)</a>に用いられている，APISNOTEの各シートのcsvよりデータを取得し，一つのPandasデータフレームを出力する関数(ApisnoteActivityDF.py内に格納)。</p>
       </div>
       <div class="mini-section">
-         <h3 class="usecase-title">#2 Get Apsinote csv files</h3>
-         <p class="txt">あるフォルダにあるAPISNOTEの各シートのcsvファイルを取得するpythonコード。</p>
+         <h3 class="usecase-title">#2 xAxisIndex()</h3>
+         <p class="txt"><a href="https://github.com/Apisnote-Community/Apisnote-Activity-viewer">aav</a>に用いられている,makeActivityArray()から出力される列名(時間)を見やすく変換する関数</p>
+         <p class="txt">(ApisnoteActivityDF.py内に格納)</p>
       </div>
       <div class="mini-section">
-         <h3 class="usecase-title">#3 Get Apsinote csv files with list.txt</h3>
-         <p class="txt">list.txtを用いてAPISNOTEの各シートのcsvファイルを取得するpythonコード。</p>
+         <h3 class="usecase-title">#3 heatmap()</h3>
+         <p class="txt"><a href="https://github.com/Apisnote-Community/Apisnote-Activity-viewer">aav</a>に用いられている,makeActivityArrayから出力されるDataFrameを可視化するための関数</p>
+         <p class="txt">(aav_heatmap.pyに格納)</p>
       </div>
 
       <br />
